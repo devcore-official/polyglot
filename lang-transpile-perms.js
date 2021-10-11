@@ -1,5 +1,8 @@
 
 
+const array = require("./languages.js");
+
+
 let perms = [];
 
 array.forEach((ele0)=>{
@@ -13,8 +16,6 @@ array.forEach((ele0)=>{
 });
 
 
-
-
 let url = `https://github.com/search?q=`;
 
 perms.forEach((obj)=>{
@@ -23,4 +24,11 @@ perms.forEach((obj)=>{
   
   console.log(`${url}transpile+${from}+to+${to}`);
   
-})
+});
+
+
+
+
+
+
+
