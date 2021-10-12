@@ -1,0 +1,131 @@
+{
+  "name": "polyglot",
+  "version": "1.0.0",
+  "description": "unglued transpiled code",
+  "main": "install-all-languages.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devcore-official/polyglot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devcore-official/polyglot/issues"
+  },
+  "homepage": "https://github.com/devcore-official/polyglot#readme",
+
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "languages-install-all": "node ./languages/install-all-languages.js",
+    "languages-compile-all": "node ./languages/compile-all-languages.js",
+    "languages-run-all":     "node ./langauges/run-all-languages.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "languages-install": {
+    "bash": "",
+    "powershell":"",
+    "VBA":"",
+
+    "javascript": "",
+    "nodejs":     "bash nodejs-install.bash",
+    "python":     "bash python-install.bash",
+    "php":        "bash php-install.bash",
+    "ruby":       "bash ruby-install.bash",
+    "perl":       "bash perl-install.bash",
+    "lua":        "bash lua-install.bash",
+    "r":          "bash R-install.bash",
+    "lisp":       "bash lisp.install.bash",
+
+    "kotlin":"",
+
+    "swift":      "bash swift-install.bash",
+    "go":         "bash go-install.bash",
+    "java":       "bash java-install.bash",
+    
+    "c++":        "bash c-install.bash",
+
+    "c":          "bash c-install.bash",
+    "rust":       "bash rust-install.bash",
+    "fortran":    "bash fortran-install.bash",
+
+    "x86":"",
+    "arm32":"",
+    "arm64":"",
+
+    "web assembly":""
+  },
+
+
+  "languages-compile":{
+    "bash": "",
+    "powershell":"",
+    "VBA":"",
+
+    "javascript": "bash javascript-compile.bash",
+    "nodejs": "bash nodejs-compile.bash",
+    "python": "bash python-compile.bash",
+    "php": "bash php-compile.bash",
+    "ruby":"bash ruby-compile.bash",
+    "perl":"bash perl-compile.bash",
+    "lua":"bash lua-compile.bash",
+    "r":"bash r-compile.bash",
+    "lisp":"bash lisp-compile.bash",
+
+    "kotlin":"",
+
+    "swift": "bash swift-compile.bash",
+    "go": "bash go-compile.bash",
+    "java": "bash java-compile.bash",
+    
+    "c++": "bash cpp-compile.bash",
+
+    "c":"bash c-compile.bash",
+    "rust":"bash rust-compile.bash",
+    "fortran":"",
+
+    "x86":"",
+    "arm32":"",
+    "arm64":"",
+
+    "web assembly":""
+  },
+
+  "languages-run":{
+    "bash": "",
+    "powershell":"",
+    "VBA":"",
+
+    "javascript": "",
+    "nodejs":     "bash node-run.bash",
+    "python":     "bash python-run.bash",
+    "php":        "bash php-run.bash",
+    "ruby":       "bash ruby-run.bash",
+    "perl":       "bash perl-run.bash",
+    "lua":        "bash lua-run.bash",
+    "r":          "bash r-run.bash",
+    "lisp":       "bash lisp-run.bash",
+
+    "kotlin":"",
+
+    "swift":      "bash swift-run.bash",
+    "go":         "bash go-run.bash",
+    "java":       "bash java-run.bash",
+    
+    "c++":        "bash cpp-run.bash",
+
+    "c":          "bash c-run.bash",
+    "rust":       "bash rust-run.bash",
+    "fortran":    "bash fortran-run.bash",
+
+    "x86":"",
+    "arm32":"",
+    "arm64":"",
+
+    "web assembly":""
+  }
+}
