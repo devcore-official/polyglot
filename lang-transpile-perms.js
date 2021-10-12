@@ -1,7 +1,6 @@
-
+const writeFileSync = require("fs").writeFileSync;
 
 const array = require("./languages.js");
-
 
 let perms = [];
 
@@ -15,16 +14,20 @@ array.forEach((ele0)=>{
   
 });
 
-
 let url = `https://github.com/search?q=`;
+
+let urls = ``;
 
 perms.forEach((obj)=>{
   
   const {from, to} = obj; 
   
-  console.log(`${url}transpile+${from}+to+${to}`);
+  urls += `${url}transpile+${from}+to+${to}`
+  urls += `\n`;
   
 });
+
+writeFileSync(`github-searches-transpilers.txt`, urls);
 
 
 
