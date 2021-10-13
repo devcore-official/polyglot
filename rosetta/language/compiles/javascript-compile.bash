@@ -1,1 +1,0 @@
-# javascript is interpreted language

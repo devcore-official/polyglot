@@ -1,3 +1,0 @@
-# python is interpreted language.
-
-

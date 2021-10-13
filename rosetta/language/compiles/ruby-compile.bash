@@ -1,1 +1,0 @@
-# ruby is interpreted language

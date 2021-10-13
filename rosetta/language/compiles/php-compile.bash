@@ -1,3 +1,0 @@
-# php is interpreted language.
-
-

@@ -160,7 +160,6 @@ derived:[
 
 ]
 
-
 cpp:[
 
 	// type			bits	value range
@@ -183,10 +182,6 @@ cpp:[
 	["long double",		96,	[[]]],
 	["wchar_t",		[16,32],[[]]],
 ]
-
-
-
-
 
 
 ]

@@ -1,1 +1,0 @@
-# lua is interpreted language.
