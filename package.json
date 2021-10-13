@@ -20,9 +20,14 @@
     "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 
-    "languages-install-all": "node ./languages/install-all-languages.js",
-    "languages-compile-all": "node ./languages/compile-all-languages.js",
-    "languages-run-all":     "node ./langauges/run-all-languages.js"
+    "languages-download": "node -e \"./LanguageScripts.js download\"",
+    "languages-install":  "node -e \"./LanguageScripts.js install\"",
+    "languages-compile":  "node -e \"./LanguageScripts.js compile\"",
+    "languages-execute":  "node -e \"./LanguageScripts.js execute\"",
+    "languages-freeze" :  "node -e \"./LanguageScripts.js freeze\"",
+    "languages-poweroff": "node -e \"./LanguageScripts.js poweroff\"",
+    "languages-kill"   :  "node -e \"./LanguageScripts.js kill\"",
+    "languages-profile":  "node -e \"./LanguageScripts.js profile\""
   },
   "author": "",
   "license": "ISC",

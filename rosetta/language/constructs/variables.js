@@ -50,7 +50,7 @@ kotlin:     "",
 swift:      "",
 go:[
     [`var`,  `<decl> <name> <type> = <value>`,       `post`,      `no`,        `re`,              `block`, `stagnant`],
-    [`const`,`<decl> <name> <type> = <char | string, boolean, numeric>`,       `post`,      `no`,        `re`,              `block`, `stagnant`]
+    [`const`,`<decl> <name> <type> = <char | string | boolean | numeric>`,       `post`,      `no`,        `re`,              `block`, `stagnant`]
 ],         
 java:[
     [`none`,  `<ifConst> <type> <name> = <value>`,       `post`,      `no`,        `re`,              `block`, `stagnant`],

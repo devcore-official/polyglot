@@ -555,7 +555,7 @@ module.exports = [ // layer 1
 
 
         javascript: "x ^= y",
-        nodejs:     "",
+        nodejs:     "x ^=",
         python:     "x ^= y",
         php:        "",
         ruby:       "",
@@ -1319,7 +1319,7 @@ module.exports = [ // layer 1
         javascript: "x && y",
         nodejs:     "",
         python:     "x and y",
-        php:        ["y and x","x and y"],
+        php:        ["y and x","x && y"],
         ruby:       ["x and y","x && y"],
         perl:       ["x and y","x && y"],
         lua:        "",
@@ -1739,7 +1739,6 @@ module.exports = [ // layer 1
         nodejs:     "",
         python:     "",
         php:        "arr0 + arr1",
-        ruby:       "",
         perl:       "",
         lua:        "",
         r:          "",
