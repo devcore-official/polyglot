@@ -1,0 +1,49 @@
+variables(),,,,,,,
+,declaration,syntax,assignable stage,redeclarable,reassignable,scope,hoisted
+javascript,var,var <name> = <value>,post,re,re,global,hoisted
+,let,let <name> = <value>,post,non,re,block,stagnant
+,const,const <name> = <value>,init,non,sub,block,stagnant
+nodejs,var,var <name> = <value>,post,re,re,global,hoisted
+,let,let <name> = <value>,post,non,re,block,stagnant
+,const,const <name> = <value>,init,non,sub,block,stagnant
+python,none,<decl> <name> = <value>,init,re,re,block,stagnant
+,global,<decl> <name> = <value>,post,re,re,global,stagnant
+php,none,<decl> $<name> = <value> ,init,re,re,block,stagnant
+,const,<decl> $<name> = <value>,init,no,no,block,stagnant
+,define,"<decl>('<name>',<value>)",init,??,??,block,stagnant
+ruby,none,<name> = <value>,init,no,re,global,stagnant
+,@@,<decl> <name> = <value>,init,no,re,class,stagnant
+,none,<decl> <Name> = <value>,init,no,no,block,stagnant
+perl,$,<decl><name> = <integer | string | float> ,init,no,re,block,stagnant
+,@,<decl><name> = <array>,init,no,re,block,stagnant
+,%,<decl><name> = <hash>,init,no,re,block,stagnant
+lua,,,,,,,stagnant
+,,,,,,,
+,,,,,,,
+r,,,,,,,stagnant
+,,,,,,,
+,,,,,,,
+lisp,,,,,,,stagnant
+,,,,,,,
+kotlin,,,,,,,stagnant
+,,,,,,,
+swift,,,,,,,stagnant
+,,,,,,,
+go,var,<decl> <name> <type> = <value>,post,no,re,block,stagnant
+,const,<decl> <name> <type> = <char | string | boolean | numeric>,post,no,no,block,stagnant
+java,none,<decl> <name> <type> = <value>,,,,,stagnant
+,const,<decl> <name> <type> = <value>,post,no,re,block,stagnant
+c++,none,<decl> <name> <type> = <value>,post `,no,re,block,stagnant
+,const,<decl> <name> <type> = <value>,post,no,no,block,stagnant
+c,none,<decl> <name> <type> = <value>,post,no,yes,block,stagnant
+,const,<decl> <name> <type> = <value>,init,no,no,block,stagnant
+,#define,<decl> <name> <type> <value>,init,no,no,block,stagnant
+c#,none,<decl> <name> <type> = <value>,post,no,no,block,stagnant
+,const,<decl> <name>,init,no,no,block,stagnant
+rust,let,<decl> <mut> <name>:<type> = <value>,post,no,yes,block,stagnant
+,const,<decl> <name>:<type> = <value>,init,no,no,block,stagnant
+fortan,,,,,,,stagnant
+x86,,,,,,,stagnant
+arm32,,,,,,,stagnant
+arm64,,,,,,,stagnant
+wasm,,,,,,,stagnant

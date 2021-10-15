@@ -1,0 +1,61 @@
+loops(),,,,
+,pre - while,,,
+,<code-pre>,,,
+,post - while,,,
+,<code-post>,,,
+,while,,,for
+language,,,,
+javascript,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+nodejs,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+python,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+php,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+ruby,"            while <limiter> do
+                <code-dur>
+            end",,,
+perl,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+lua,"            while <limiter> do
+                <code-dur>
+            end",,,
+r,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+lisp,"            (loop while (<limiter>) 
+                do <code-dur>",,,
+kotlin,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+swift,"            while <limiter> {
+                <code-dur>
+            }",,,
+go,"            for <limiter> {
+                <code-dur>
+            }",,,
+java,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+c++,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+c,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+rust,"            while (<limiter>) {
+                <code-dur>
+            }",,,
+fortan,"            do while (<limiter>) {
+                <code-dur>
+            }",,,
+x86,,,,
+arm32,,,,
+arm64,,,,
+wasm,,,,

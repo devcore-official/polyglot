@@ -1,0 +1,235 @@
+statements(),,,,,,,
+,,,,,,,
+,if,,if - else,,if-else-if-else,,if-chain
+language,,,,,,,
+javascript,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+nodejs,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+python,"if <condition>: 
+    <then>",,"if <condition[0]>: 
+    <then[0]>
+else: 
+    <then[1]>",,"if <condition[0]>: 
+    <then[0]>
+elif <condition[1]>: 
+    <then[1]>
+else:
+    <then[2]>",,
+php,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+ruby,"if <condition>
+    <then>",,"if <condition[0]>
+    <then[0]>
+else <then[1]>    ",,"if <condition[0]>
+    <then[0]>
+elsif <condition[1]
+    <then[1]> 
+else
+    <then[2]>",,
+perl,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+lua,if <condition> then <then> end,,"if <condition[0]> then <then[0]> 
+elsif <condition[1]> then <then[1]>
+end",,"if <condition[0]> then <then[0]> 
+elsif <condition[1]> then <then[1]>
+else <then[2]>
+end",,
+r,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+lisp,,,,,,,
+kotlin,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition>) { <then[0]> }
+else if (<condition>) { <then[1]> }
+else { <then[2]> }",,
+swift,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+go,if <condition> { <then> },,"if <condition[0]> { <then[0]> }
+else { <then[1]> }",,"if <condition[0]> { <then[0]> }
+else if <condition[1]> { then[1] }
+else { <then[2]> }",,
+java,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+c++,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+c,if (<condition>) { <then> },,"if (<condition[0]>) { <then[0]> }
+else { <then[1]> }",,"if (<condition[0]>) { <then[0]> }
+else if (<condition[1]>) { <then[1]> }
+else { <then[2]> }",,
+rust,if <condition> { <then> },,"if <condition[0]> { <then[0]> }
+else { <then[1]> }",,"if <condition[0]> { <then[0]> }
+else if <condition[1]> { <then[1]> }
+else { <then[2]> }",,
+fortan,"IF (<condition>) THEN <then>
+ENDIF",,"IF (<condition[0]>) THEN <then[0]>
+ELSE <then[1]>
+END IF",,"IF (<condition[0]>) THEN <then[0]>
+ELSE IF (<condition[1]>) THEN <then[1]>
+ELSE <then[2]>
+END IF",,
+x86,,,,,,,
+arm32,,,,,,,
+arm64,,,,,,,
+wasm,,,,,,,
+,,,,,,,
+statements(),,,,,,,
+,,,,,,,
+,try catch,try catch finally,,try except,many exceptions,try except finally,
+language,,,,,,,
+javascript,"try {
+    <try>
+}
+catch (error) {
+   <catch>(error)
+}","try {
+    <try>
+} catch (error) {
+    <catch>(error)
+} finally {
+   <finally>
+}",,,,,
+nodejs,"try {
+    <try>
+}
+catch (error) {
+   <catch>(error)
+}","try {
+    <try>
+} catch (error) {
+    <catch>(error)
+} finally {
+   <finally>
+}",,,,,
+python,,,,"try: 
+    <try>
+except:
+    <except>","try: 
+    <try>
+except <errorType>:
+    <except[i]>
+except:
+    <except>","try:
+    <try>
+except:
+    <except>
+finally:
+    <finally>",
+php,"try {
+    <try>
+}
+catch (Exception $error) {
+   <catch>($error)
+}","try {
+    <try>
+}
+catch (Exception $error) {
+   <catch>($error)
+} finally {
+    <finally>
+}",,,,,
+ruby,,,,,,,
+perl,"try {
+    <try>
+} catch (Exception $error) {
+    <catch>($error)
+}",,,,,,
+lua,,,,,,,
+r,,,,,,,"tryCatch(
+    expr = {
+        # Your code...
+        # goes here...
+        # ...
+    },
+    error = function(e){ 
+        # (Optional)
+        # Do this if an error is caught...
+    },
+    warning = function(w){
+        # (Optional)
+        # Do this if an warning is caught...
+    },
+    finally = {
+        # (Optional)
+        # Do this at the end before quitting the tryCatch structure...
+    }
+)
+"
+lisp,,,,,,,
+kotlin,"try {
+    <try>
+}catch(e: <Exception>){
+    <catch>
+}","try {
+    <try>
+}catch(e: <Exception>){
+    <catch>
+} finally {
+    <finally>
+}",,,,,
+swift,"do {
+    try <try>
+} catch {
+    <catch>
+}","do {
+    try <try>
+} catch {
+    <catch>
+}
+
+<finally>",,,,,
+go,,,,,,,
+java,,,,,,,
+c++,,,,,"try {
+    <try>
+} catch(<Exception>) {
+    <catch>
+}",,
+c,,,,,,,
+rust,,,,,,,
+fortan,,,,,,,
+x86,,,,,,,
+arm32,,,,,,,
+arm64,,,,,,,
+wasm,,,,,,,
+,,,,,,,
+statements(),,,,,,,
+,raise error,,,,,,
+,,,,,,,
+language,,,,,,,
+javascript,throw <value>,,,,,,
+nodejs,throw <value>,,,,,,
+python,raise <Exception>(<value>),,,,,,
+php,,,,,,,
+ruby,,,,,,,
+perl,,,,,,,
+lua,,,,,,,
+r,,,,,,,
+lisp,,,,,,,
+kotlin,,,,,,,
+swift,,,,,,,
+go,,,,,,,
+java,,,,,,,
+c++,,,,,,,
+c,,,,,,,
+rust,,,,,,,
+fortan,,,,,,,
+x86,,,,,,,
+arm32,,,,,,,
+arm64,,,,,,,
+wasm,,,,,,,

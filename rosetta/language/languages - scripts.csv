@@ -1,0 +1,35 @@
+Scripts(),,,,,,,,,
+,download - pre,install - pre,uninstall,compile - pre,execute - pre,freeze - pre,poweroff - pre,kill - pre,profile - pre
+,,"sudo apt update
+sudo apt upgrade",,,programname = $1; ext = $2,,,,
+language,download,install,,compile,execute,,,,
+javascript,,sudo apt install nodejs,,bytenode -c $programname.js,node $file,,,,
+nodejs,,sudo apt install nodejs,,bytenode -c $programname.js,node $file,,,,
+python,,sudo apt install python3,,,python $file,,,,
+php,,sudo apt install ,,,php $file,,,,
+ruby,,"sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt -y install php7.4",,,ruby $file,,,,
+perl,,sudo apt install perl,,,perl $file,,,,
+lua,,sudo apt install lua5.3,,,lua $file,,,,
+r,,sudo apt install r-base-core,,,r $file,,,,
+lisp,,sudo apt install clisp,,,clisp $file,,,,
+kotlin,,,,,,,,,
+swift,,"sudo apt-get install curl clang libicu-dev git libatomic1 libicu60 libxml2 libcurl4 zlib1g-dev libbsd0 tzdata libssl-dev libsqlite3-dev libblocksruntime-dev libncurses5-dev libdispatch-dev -y
+mkdir swift
+tar -xvzf FILE -C ./swift
+export PATH=""~/swift/FILE/usr/bin:$PATH""",,swiftc $programname.swift,swift $file,,,,
+go,,sudo apt install golang-go,,"cd $directory
+
+go build ",go run $programname,,,,
+java,,sudo apt install openjdk-17-jre-headless,,javac $programname.java,java $file,,,,
+c++,,sudo apt install g++,,g++ -o $programname $programname.cpp,,,,,
+c,,sudo apt install gcc,,cl $programname.c,./$file,,,,
+rust,,"sudo apt install curl
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh",,rustc $programname.rs,./$file,,,,
+fortan,,"sudo apt install gfortran
+",,,./$file,,,,
+x86,,,,,,,,,
+arm32,,,,,,,,,
+arm64,,,,,,,,,
+wasm,,,,,,,,,
