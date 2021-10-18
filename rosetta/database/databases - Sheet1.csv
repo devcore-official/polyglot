@@ -1,0 +1,244 @@
+,,,,,,,,,
+db,download - pre,install - pre,uninstall,compile - pre,execute - pre,freeze - pre,poweroff - pre,kill - pre,profile - pre
+Oracle,,,,,,,,,
+MySQL,,sudo apt-get install mysql-server,,,,,,,
+Microsoft SQL Server,,,,,,,,,
+PostgreSQL,,"sudo sh -c 'echo ""deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main"" > /etc/apt/sources.list.d/pgdg.list'
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get install postgresql
+",,,,,,,
+MongoDB,,sudo apt-get install -y mongodb-org,,,,,,,
+MariaDB,,"grep mysql /etc/group
+mysql:x:27:
+sudo apt install mariadb-client mariadb-server
+",,,,,,,
+DB2,,,,,,,,,
+SAP HANA.,,"cd <preferred_filepath>
+sudo tar <download_filepath>/clients_linux_x86_64.tgz
+cd <your_destination>
+sudo tar -xvzf <unzipped_filepath>/hdb_client_linux_x86_64.tgz
+cd HDB_CLIENT_LINUX_X86_64
+sudo ./hdbinst",,,,,,,
+interbase,," <interbase_home>/bin/LicenseManagerLauncher -i Console 
+gbak -b /usr/interbase/admin.ib /tmp/admin.ibk
+cp /usr/interbase/ib_license.dat /tmp   
+cp /usr/interbase/ibconfig /tmp 
+",,,,,,,
+orientdb,https://orientdb.com/download,"cd orientdb-3.0.0
+cd bin
+./server.sh
+",,,,,,,
+sqlite,,"tar xvfz sqlite-autoconf-3071502.tar.gz
+cd sqlite-autoconf-3071502
+./configure --prefix=/usr/local
+make
+make install
+",,,,,,,
+cassandra,,"sudo apt update
+sudo apt install openjdk-8-jdk -y
+sudo apt install apt-transport-https
+sudo sh -c 'echo ""deb http://www.apache.org/dist/cassandra/debian 40x main"" > /etc/apt/sources.list.d/cassandra.list'
+wget -q -O - https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
+sudo apt update
+sudo apt install Cassandra
+",,,,,,,
+couchdb,,"udo apt update && sudo apt install -y curl apt-transport-https gnupg
+curl https://couchdb.apache.org/repo/keys.asc | gpg --dearmor | sudo tee /usr/share/keyrings/couchdb-archive-keyring.gpg >/dev/null 2>&1
+source /etc/os-release
+echo ""deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main"" \
+    | sudo tee /etc/apt/sources.list.d/couchdb.list >/dev/null
+sudo apt update
+sudo apt install -y couchdb
+pub   rsa8192 2015-01-19 [SC]
+      390EF70BB1EA12B2773962950EE62FB37A00258D
+uid           The Apache Software Foundation (Package repository signing key) <root@apache.org>",,,,,,,
+dynamodb,," Create a hidden folder in your home directory
+mkdir ./dynamolocal
+
+# change into the new created directory
+cd ./dynamolocal
+
+# Download the DynamoDB tar 
+# Best to do this on a fast internet connection
+wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz
+
+#Once the file is download you uncompress it
+tar xzf dynamodb_local_latest.tar.gz
+
+#Check the file contents in the folder 
+ls 
+
+# The structure should look something similar too 
+DynamoDBLocal.jar  LICENSE.txt  third_party_licenses
+DynamoDBLocal_lib  README.txt
+
+# Optional once the file is uncompress delete the tar
+rm -f dynamodb_local_latest.tar.gz ",,,,,,,
+neo4j,,"echo ""deb http://httpredir.debian.org/debian stretch-backports main"" | sudo tee -a /etc/apt/sources.list.d/stretch-backports.list
+sudo apt-get update
+sudo apt-get install openjdk-11-jre
+sudo add-apt-repository -y ppa:openjdk-r/ppa
+sudo apt-get update
+sudo update-java-alternatives --jre --set <java11name>
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.com stable latest' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.com stable 4.3' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+sudo add-apt-repository universe
+sudo apt-get install neo4j=1:4.3.2",,,,,,,
+firebirdsql,,"sudo su
+apt-get install firebird2.5-superclassic",,,,,,,
+firebase,,,,,,,,,
+4D,,,,,,,,,
+Action PSQL,,,,,,,,,
+ADABAS,,,,,,,,,
+Adaptive Server Enterprise,,,,,,,,,
+Altibase,,,,,,,,,
+Amazon Aurora,,,,,,,,,
+Amazon DocumentDB,,,,,,,,,
+Amazon DynamoDB,,,,,,,,,
+Amazon Redshift,,,,,,,,,
+Amazon SimpleDB,,,,,,,,,
+Apache Accumulo,,,,,,,,,
+Apache Cassandra,,,,,,,,,
+Apache Derby,,,,,,,,,
+Apache Hbase,,,,,,,,,
+ArangoDB,,,,,,,,,
+Axisbase,,,,,,,,,
+Bigtable,,,,,,,,,
+Caché,,,,,,,,,
+Cemstone/S,,,,,,,,,
+Clusterpoint database,,,,,,,,,
+Clustrix,,,,,,,,,
+CockroachDB,,,,,,,,,
+ConceptBase,,,,,,,,,
+Cosmos DB,,,,,,,,,
+CouchBase,,,,,,,,,
+CouchDB,,,,,,,,,
+CUBRID Database,,,,,,,,,
+D3 Pick database,,,,,,,,,
+Database .NET,,,,,,,,,
+Database Labs,,,,,,,,,
+Datacom,,,,,,,,,
+Db4o,,,,,,,,,
+dBase,,,,,,,,,
+Dbeaver,,,,,,,,,
+dbHarbor: SQLite,,,,,,,,,
+DeepDB,,,,,,,,,
+Empress Embedded Database,,,,,,,,,
+EXASolution,,,,,,,,,
+Extensible Storage Engine (ESE/NT),,,,,,,,,
+FileMaker,,,,,,,,,
+Firebird,,,,,,,,,
+FlockDB,,,,,,,,,
+Freebase,,,,,,,,,
+Frontbase,,,,,,,,,
+GemStone/S,,,,,,,,,
+GigaSpaces,,,,,,,,,
+GPUdb,,,,,,,,,
+Greenplum Database,,,,,,,,,
+H2 Database Engine,,,,,,,,,
+HP NonStop SQL,,,,,,,,,
+HSQLDB,,,,,,,,,
+IBM Cloud NoSQL Database Service,,,,,,,,,
+IBM DB2,,,,,,,,,
+InfinityDB,,,,,,,,,
+Informix,,,,,,,,,
+Ingres,,,,,,,,,
+Interbase,,,,,,,,,
+JADE,,,,,,,,,
+jBASE Pick database,,,,,,,,,
+Kexi,,,,,,,,,
+LibreOffice Base,,,,,,,,,
+Linter SQL RDBMS,,,,,,,,,
+LucidDB,,,,,,,,,
+MariaDB,,,,,,,,,
+MariaDB,,,,,,,,,
+MarkLogic,,,,,,,,,
+Matisse,,,,,,,,,
+MaxDB,,,,,,,,,
+MemSQL,,,,,,,,,
+Micro Focus XDB Enterprise Server,,,,,,,,,
+Microsoft Access,,,,,,,,,
+Microsoft Azure SQL Database,,,,,,,,,
+Microsoft SQL Server,,,,,,,,,
+Microsoft Visual FoxPro,,,,,,,,,
+Mimer SQL,,,,,,,,,
+Mnesia,,,,,,,,,
+MonetDB,,,,,,,,,
+MongoDB,,,,,,,,,
+mSQL,,,,,,,,,
+mvBase,,,,,,,,,
+mvEnterprise,,,,,,,,,
+MySQL,,,,,,,,,
+NexusDB,,,,,,,,,
+NuoDB,,,,,,,,,
+ObjectDatabase++,,,,,,,,,
+ObjectDB,,,,,,,,,
+ObjectStore,,,,,,,,,
+ODABA,,,,,,,,,
+Omnis Studio,,,,,,,,,
+Open Sqlite,,,,,,,,,
+OpenAccess,,,,,,,,,
+OpenBase SQL,,,,,,,,,
+OpenEdge Advanced Business Language (Progress 4GL),,,,,,,,,
+OpenLink Virtuoso,,,,,,,,,
+OpenQM,,,,,,,,,
+Oracle Database,,,,,,,,,
+Oracle TimesTen,,,,,,,,,
+OrientDB,,,,,,,,,
+Paradox,,,,,,,,,
+Perst,,,,,,,,,
+Pervasive PSQL,,,,,,,,,
+Picolisp,,,,,,,,,
+Polyhedra RDBMS,,,,,,,,,
+PortaBase,,,,,,,,,
+PostgreSQL,,,,,,,,,
+Postres-XC,,,,,,,,,
+Profium Sense,,,,,,,,,
+R:Base,,,,,,,,,
+Raima Database Manager,,,,,,,,,
+RDM Server,,,,,,,,,
+RethinkDB,,,,,,,,,
+RSQL,,,,,,,,,
+SAP HANA,,,,,,,,,
+SAP MaxDB,,,,,,,,,
+ScimoreDB,,,,,,,,,
+Sequel Pro,,,,,,,,,
+solidDB,,,,,,,,,
+SQL Anywhere,,,,,,,,,
+SQLBase,,,,,,,,,
+SQLGate,,,,,,,,,
+SQLite,,,,,,,,,
+SQream DB,,,,,,,,,
+Sqrrl Enterprise,,,,,,,,,
+Starcounter,,,,,,,,,
+Superbase,,,,,,,,,
+Sybase Advantage Database Server,,,,,,,,,
+Symphytum,,,,,,,,,
+Tarantool,,,,,,,,,
+Tecknolab Dbcloudbin,,,,,,,,,
+Teradata,,,,,,,,,
+TIBCO ActiveSpaces,,,,,,,,,
+Tibero,,,,,,,,,
+TiDB,,,,,,,,,
+Titan Database,,,,,,,,,
+Trafodion,,,,,,,,,
+UniData,,,,,,,,,
+Unisys RDMS 2200,,,,,,,,,
+UnQLite,,,,,,,,,
+Valentina Server,,,,,,,,,
+Versant Object Database,,,,,,,,,
+Vertica,,,,,,,,,
+VistaDB,,,,,,,,,
+VMDS,,,,,,,,,
+VoltDB,,,,,,,,,
+WakandaDB,,,,,,,,,
+YugaByte DB,,,,,,,,,
+Zope Object Database,,,,,,,,,
