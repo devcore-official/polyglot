@@ -2,7 +2,7 @@
   "name": "polyglot",
   "version": "1.0.0",
   "description": "unglued transpiled code",
-  "main": "install-all-languages.js",
+  "main": "LanguageScripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,20 +15,5 @@
   "bugs": {
     "url": "https://github.com/devcore-official/polyglot/issues"
   },
-  "homepage": "https://github.com/devcore-official/polyglot#readme",
-
-    "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-
-    "languages-download": "node -e \"./LanguageScripts.js download\"",
-    "languages-install":  "node -e \"./LanguageScripts.js install\"",
-    "languages-compile":  "node -e \"./LanguageScripts.js compile\"",
-    "languages-execute":  "node -e \"./LanguageScripts.js execute\"",
-    "languages-freeze" :  "node -e \"./LanguageScripts.js freeze\"",
-    "languages-poweroff": "node -e \"./LanguageScripts.js poweroff\"",
-    "languages-kill"   :  "node -e \"./LanguageScripts.js kill\"",
-    "languages-profile":  "node -e \"./LanguageScripts.js profile\""
-  },
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/devcore-official/polyglot#readme"
 }
